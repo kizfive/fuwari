@@ -164,12 +164,25 @@
               "icon": "lucide-list",
               "title": "markdown 的大纲"
             }
+          },
+          {
+            "id": "da3f80bf61b5b9df",
+            "type": "leaf",
+            "state": {
+              "type": "file-properties",
+              "state": {
+                "file": "src/content/posts/markdown.md"
+              },
+              "icon": "lucide-info",
+              "title": "markdown的笔记属性"
+            }
           }
-        ]
+        ],
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 300,
+    "width": 200,
     "collapsed": true
   },
   "left-ribbon": {
@@ -180,7 +193,8 @@
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
-      "bases:创建新数据库": false
+      "bases:创建新数据库": false,
+      "obsidian-git:Open Git source control": false
     }
   },
   "active": "0aa820ff8ea01a1f",
