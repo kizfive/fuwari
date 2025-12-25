@@ -70,14 +70,14 @@ export const profileConfig: ProfileConfig = {
 			url: "https://steamcommunity.com/id/kizfive/",
 		},
 		{
-			name:"Openlist",
-			icon:"ic:sharp-cloud-circle",
-			url:"http://8.138.20.164:5244/",
+			name: "Openlist",
+			icon: "ic:sharp-cloud-circle",
+			url: "http://8.138.20.164:5244/",
 		},
 		{
-			name:"贪吃蛇",
-			icon:"fluent-emoji-high-contrast:beaming-face-with-smiling-eyes",
-			url:"http://8.138.20.164:114/"
+			name: "贪吃蛇",
+			icon: "fluent-emoji-high-contrast:beaming-face-with-smiling-eyes",
+			url: "http://8.138.20.164:114/"
 		}
 		// {
 		// 	name: "GitHub",
