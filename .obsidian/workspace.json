@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "src/content/posts/未命名.md",
+                "file": "src/content/posts/111.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "未命名"
+              "title": "111"
             }
           },
           {
@@ -123,7 +123,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "src/content/posts/未命名.md",
+                "file": "src/content/posts/111.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -133,7 +133,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "未命名 的反向链接列表"
+              "title": "111 的反向链接列表"
             }
           },
           {
@@ -142,12 +142,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "src/content/posts/未命名.md",
+                "file": "src/content/posts/111.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "未命名 的出链列表"
+              "title": "111 的出链列表"
             }
           },
           {
@@ -185,13 +185,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "src/content/posts/未命名.md",
+                "file": "src/content/posts/111.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "未命名 的大纲"
+              "title": "111 的大纲"
             }
           },
           {
@@ -200,10 +200,10 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "src/content/posts/未命名.md"
+                "file": "src/content/posts/111.md"
               },
               "icon": "lucide-info",
-              "title": "未命名的笔记属性"
+              "title": "111的笔记属性"
             }
           },
           {
@@ -237,24 +237,30 @@
   },
   "active": "b449f015084726e8",
   "lastOpenFiles": [
-    "src/content/posts/111.md",
     "src/content/posts/未命名.md",
+    "src/content/posts/111.md",
+    "src/content/posts/如何在安装了1Panle的云服务器上部署Fuwari.md",
+    "node_modules/@expressive-code/plugin-text-markers/dist/index.js.map",
+    "node_modules/@expressive-code/plugin-text-markers/dist/index.js",
+    "node_modules/@expressive-code/plugin-text-markers/dist/index.d.ts",
+    "node_modules/@expressive-code/plugin-text-markers/dist",
+    "node_modules/@expressive-code/plugin-shiki/dist/index.js.map",
+    "node_modules/@expressive-code/plugin-shiki/dist/index.js",
+    "node_modules/@expressive-code/plugin-shiki/dist/index.d.ts",
+    "node_modules/@expressive-code/plugin-shiki/dist",
+    "node_modules/@expressive-code/plugin-shiki/package.json",
+    "node_modules/@expressive-code/plugin-frames/dist/index.js.map",
+    "node_modules/expressive-code/README.md",
+    "node_modules/@shikijs/vscode-textmate/README.md",
+    "node_modules/@shikijs/vscode-textmate/LICENSE.md",
+    "node_modules/@shikijs/types/README.md",
+    "node_modules/@shikijs/core/README.md",
+    "node_modules/@types/parse-json/README.md",
     "src/content/posts/video.md",
     "src/content/posts/markdown-extended.md",
     "src/content/posts/markdown.md",
     "src/content/posts/expressive-code.md",
     "src/content/posts/draft.md",
-    "src/content/posts/如何在安装了1Panle的云服务器上部署Fuwari.md",
-    "dist/pagefind/index/zh-cn_2f15cec.pf_index",
-    "dist/pagefind/fragment/zh-cn_fde7b6b.pf_fragment",
-    "dist/pagefind/fragment/zh-cn_cb2351c.pf_fragment",
-    "dist/pagefind/fragment/zh-cn_9fa5bff.pf_fragment",
-    "dist/pagefind/fragment/zh-cn_b0cfcf5.pf_fragment",
-    "dist/pagefind/fragment/zh-cn_6e99f95.pf_fragment",
-    "dist/pagefind/fragment/zh-cn_426e524.pf_fragment",
-    "dist/pagefind/fragment/zh-cn_60e01e7.pf_fragment",
-    "dist/pagefind/wasm.unknown.pagefind",
-    "dist/pagefind/pagefind.zh-cn_2d321329b0f1b.pf_meta",
     "dist/_astro/如何在1panle上部署fuwari-2.C_lY8IAg.png",
     "dist/_astro/avatar.D6S37CDx.png",
     "dist/_astro/demo-banner.WD4SMgz_.png",
@@ -275,13 +281,6 @@
     "node_modules/hast-util-to-text/readme.md",
     "node_modules/dom-serializer/README.md",
     "node_modules/tsconfck/README.md",
-    "node_modules/hast-util-to-html/readme.md",
-    "node_modules/@pagefind/windows-x64/README.md",
-    "node_modules/zod-to-json-schema/dist-test-v3/cjs/node_modules/zod/README.md",
-    "node_modules/zod-to-json-schema/contributing.md",
-    "node_modules/zod-to-json-schema/changelog.md",
-    "node_modules/microbundle/node_modules/typescript/README.md",
-    "node_modules/microbundle/node_modules/typescript/lib/README.md",
-    "node_modules/tailwindcss/lib/postcss-plugins/nesting/README.md"
+    "node_modules/hast-util-to-html/readme.md"
   ]
 }
