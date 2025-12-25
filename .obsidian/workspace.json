@@ -25,14 +25,14 @@
             "id": "b449f015084726e8",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "split-diff-view",
               "state": {
-                "file": "src/content/posts/111.md",
-                "mode": "source",
-                "source": false
+                "aFile": "src/content/posts/111.md",
+                "bFile": "src/content/posts/111.md",
+                "aRef": ""
               },
-              "icon": "lucide-file",
-              "title": "111"
+              "icon": "diff",
+              "title": "Diff: 111"
             }
           },
           {
@@ -123,7 +123,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "src/content/posts/111.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -133,7 +132,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "111 的反向链接列表"
+              "title": "反向链接"
             }
           },
           {
@@ -142,12 +141,11 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "src/content/posts/111.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "111 的出链列表"
+              "title": "出链"
             }
           },
           {
@@ -185,13 +183,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "src/content/posts/111.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "111 的大纲"
+              "title": "大纲"
             }
           },
           {
@@ -199,11 +196,9 @@
             "type": "leaf",
             "state": {
               "type": "file-properties",
-              "state": {
-                "file": "src/content/posts/111.md"
-              },
+              "state": {},
               "icon": "lucide-info",
-              "title": "111的笔记属性"
+              "title": "笔记属性"
             }
           },
           {
@@ -237,9 +232,13 @@
   },
   "active": "b449f015084726e8",
   "lastOpenFiles": [
-    "src/content/posts/如何在安装了1Panle的云服务器上部署Fuwari.md",
-    "src/content/posts/draft.md",
     "src/content/posts/111.md",
+    "src/content/posts/expressive-code.md",
+    "src/content/posts/draft.md",
+    "src/content/posts/video.md",
+    "src/content/posts/markdown-extended.md",
+    "src/content/posts/markdown.md",
+    "src/content/posts/如何在安装了1Panle的云服务器上部署Fuwari.md",
     "dist/pagefind/index/zh-cn_2f15cec.pf_index",
     "dist/pagefind/fragment/zh-cn_fde7b6b.pf_fragment",
     "dist/pagefind/fragment/zh-cn_cb2351c.pf_fragment",
@@ -278,10 +277,6 @@
     "node_modules/microbundle/node_modules/typescript/README.md",
     "node_modules/microbundle/node_modules/typescript/lib/README.md",
     "node_modules/tailwindcss/lib/postcss-plugins/nesting/README.md",
-    "node_modules/tailwindcss/lib/value-parser/README.md",
-    "node_modules/unifont/node_modules/mdn-data/README.md",
-    "node_modules/unifont/node_modules/css-tree/README.md",
-    "node_modules/unifont/README.md",
-    "node_modules/tailwindcss/src/postcss-plugins/nesting/README.md"
+    "node_modules/tailwindcss/lib/value-parser/README.md"
   ]
 }
