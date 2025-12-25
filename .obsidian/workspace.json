@@ -248,8 +248,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "da61056e30b9e4af",
+  "active": "82f20506ff701323",
   "lastOpenFiles": [
+    "src/content/posts/1.txt",
+    "src/content/posts/新建 文本文档.txt",
     "src/content/posts/draft.md",
     "src/content/posts/如何在安装了1Panle的云服务器上部署Fuwari.md",
     "src/content/posts/guide/如何在1panle上部署fuwari-6.png",
