@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "src/content/posts/如何在安装了1Panle的云服务器上部署Fuwari.md",
+                "file": "src/content/posts/111.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "如何在安装了1Panle的云服务器上部署Fuwari"
+              "title": "111"
             }
           },
           {
@@ -123,7 +123,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "src/content/posts/如何在安装了1Panle的云服务器上部署Fuwari.md",
+                "file": "src/content/posts/111.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -133,7 +133,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "如何在安装了1Panle的云服务器上部署Fuwari 的反向链接列表"
+              "title": "111 的反向链接列表"
             }
           },
           {
@@ -142,12 +142,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "src/content/posts/如何在安装了1Panle的云服务器上部署Fuwari.md",
+                "file": "src/content/posts/111.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "如何在安装了1Panle的云服务器上部署Fuwari 的出链列表"
+              "title": "111 的出链列表"
             }
           },
           {
@@ -185,13 +185,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "src/content/posts/如何在安装了1Panle的云服务器上部署Fuwari.md",
+                "file": "src/content/posts/111.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "如何在安装了1Panle的云服务器上部署Fuwari 的大纲"
+              "title": "111 的大纲"
             }
           },
           {
@@ -200,10 +200,10 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "src/content/posts/如何在安装了1Panle的云服务器上部署Fuwari.md"
+                "file": "src/content/posts/111.md"
               },
               "icon": "lucide-info",
-              "title": "如何在安装了1Panle的云服务器上部署Fuwari的笔记属性"
+              "title": "111的笔记属性"
             }
           },
           {
@@ -237,20 +237,33 @@
   },
   "active": "b449f015084726e8",
   "lastOpenFiles": [
-    "package.json.1455089202",
-    "_tmp_384_4eedcd902d4259d6b9e20f2512025f66",
-    "node_modules/which/bin/node-which",
-    "node_modules/which/which.js",
+    "src/content/posts/如何在安装了1Panle的云服务器上部署Fuwari.md",
+    "src/content/posts/111.md",
+    "dist/pagefind/index/zh-cn_2f15cec.pf_index",
+    "dist/pagefind/fragment/zh-cn_fde7b6b.pf_fragment",
+    "dist/pagefind/fragment/zh-cn_cb2351c.pf_fragment",
+    "dist/pagefind/fragment/zh-cn_9fa5bff.pf_fragment",
+    "dist/pagefind/fragment/zh-cn_b0cfcf5.pf_fragment",
+    "dist/pagefind/fragment/zh-cn_6e99f95.pf_fragment",
+    "dist/pagefind/fragment/zh-cn_426e524.pf_fragment",
+    "dist/pagefind/fragment/zh-cn_60e01e7.pf_fragment",
+    "dist/pagefind/wasm.unknown.pagefind",
+    "dist/pagefind/pagefind.zh-cn_2d321329b0f1b.pf_meta",
+    "dist/_astro/如何在1panle上部署fuwari-2.C_lY8IAg.png",
+    "dist/_astro/avatar.D6S37CDx.png",
+    "dist/_astro/demo-banner.WD4SMgz_.png",
+    "dist/_astro/如何在1panle上部署fuwari.S3glG2At.png",
+    "dist/_astro/如何在1panle上部署fuwari-5.MnnQ5W4R.png",
+    "dist/_astro/如何在1panle上部署fuwari-4.QyYiyOmA.png",
+    "dist/_astro/如何在1panle上部署fuwari-3.BGRRGRHr.png",
+    "dist/_astro/如何在1panle上部署fuwari-1.DWTMyBwU.png",
+    "dist/_astro/markdown.BRGHsdaZ.png",
+    "dist/_astro/demo-avatar.CxcI0ivM.png",
+    "node_modules/debug/README.md",
+    "node_modules/magic-string/README.md",
     "node_modules/which/README.md",
-    "node_modules/which/package.json",
-    "node_modules/which/LICENSE",
     "node_modules/which/CHANGELOG.md",
-    "node_modules/which/bin",
-    "node_modules/which",
-    "node_modules/regjsparser/bin/parser",
-    "node_modules/regjsparser/parser.js",
     "node_modules/regjsparser/README.md",
-    "node_modules/regjsparser/parser.d.ts",
     "node_modules/jsesc/README.md",
     "node_modules/hast-util-select/readme.md",
     "node_modules/hast-util-to-text/readme.md",
@@ -269,19 +282,6 @@
     "node_modules/unifont/node_modules/css-tree/README.md",
     "node_modules/unifont/README.md",
     "node_modules/tailwindcss/src/postcss-plugins/nesting/README.md",
-    "node_modules/tailwindcss/src/value-parser/README.md",
-    "node_modules/@swup/route-name-plugin/node_modules/@swup/plugin/README.md",
-    "node_modules/@swup/route-name-plugin/node_modules/@swup/plugin/CHANGELOG.md",
-    "node_modules/@swup/route-name-plugin/node_modules/prettier/README.md",
-    "node_modules/pnpm/dist/node_modules/retry/equation.gif",
-    "src/assets/images/avatar.png",
-    "src/assets/images/touxiang.png",
-    "src/assets/images/3903E1BC9A5D74B38ECA640C2D5A68B4.png",
-    "src/content/posts/guide/如何在1panle上部署fuwari-6.png",
-    "src/content/posts/guide/如何在1panle上部署fuwari-5.png",
-    "src/content/posts/guide/如何在1panle上部署fuwari-4.png",
-    "src/content/posts/guide/如何在1panle上部署fuwari-3.png",
-    "src/content/posts/guide/如何在1panle上部署fuwari-2.png",
-    "src/content/posts/guide/如何在1panle上部署fuwari-1.png"
+    "node_modules/tailwindcss/src/value-parser/README.md"
   ]
 }

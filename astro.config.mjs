@@ -1,4 +1,5 @@
 import sitemap from "@astrojs/sitemap";
+import remarkBreaks from 'remark-breaks';
 import svelte from "@astrojs/svelte";
 import tailwind from "@astrojs/tailwind";
 import { pluginCollapsibleSections } from "@expressive-code/plugin-collapsible-sections";
@@ -29,6 +30,9 @@ export default defineConfig({
 	site: "https://fuwari.vercel.app/",
 	base: "/",
 	trailingSlash: "always",
+	markdown: {
+  			remarkPlugins: [remarkBreaks],
+			},
 	integrations: [
 		tailwind({
 			nesting: true,
