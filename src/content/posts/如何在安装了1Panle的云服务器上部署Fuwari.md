@@ -79,7 +79,7 @@ git config --global core.sshCommand "C:/Windows/System32/OpenSSH/ssh.exe"
 git config --global user.name "你的GitHub用户名"
 git config --global user.email "你的注册邮箱"
 ```
-来让Obsidian向github推送更新时知道往哪里推送.配置好之后,写完文章后,只需要按下ctrl+p,运行`Commit all changes`,就能把本地的文章给提交到github仓库上.
+来让Obsidian向github推送更新时知道往哪里推送.配置好之后,写完文章后,只需要按下ctrl+p,运行`Obsidian Git: Commit-and-sync`,就能把本地的文章给提交到github仓库上.
 
 ## 3.服务器的自动拉取和构建
 看完前两步,服务器本地部署了仓库,本地写的文章可以方便的传到github仓库里,剩下的问题就很清楚了:怎么让服务器自动检测到github的仓库内容更新了,然后自动从仓库上拉取更新,然后自动把页面再构建一遍.
