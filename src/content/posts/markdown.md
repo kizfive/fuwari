@@ -1,8 +1,11 @@
 ---
-title: Markdown Example and test again and again
+title: Markdown Example and test again and again and final
 published: 2023-10-01
 description: A simple example of a Markdown blog post.
-tags: [Markdown, Blogging, Demo]
+tags:
+  - Markdown
+  - Blogging
+  - Demo
 category: Examples
 draft: false
 ---
@@ -10,6 +13,7 @@ draft: false
 # An h1 header
 
 Paragraphs are separated by a blank line.
+![](guide/markdown.png)
 
 2nd paragraph. _Italic_, **bold**, and `monospace`. Itemized lists
 look like:
