@@ -77,8 +77,8 @@ export const profileConfig: ProfileConfig = {
 		{
 			name: "贪吃蛇",
 			icon: "fluent-emoji-high-contrast:beaming-face-with-smiling-eyes",
-			url: "http://8.138.20.164:114/"
-		}
+			url: "http://8.138.20.164:114/",
+		},
 		// {
 		// 	name: "GitHub",
 		// 	icon: "fa6-brands:github",
