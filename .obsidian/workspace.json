@@ -25,14 +25,14 @@
             "id": "b449f015084726e8",
             "type": "leaf",
             "state": {
-              "type": "split-diff-view",
+              "type": "markdown",
               "state": {
-                "aFile": "src/content/posts/111.md",
-                "bFile": "src/content/posts/111.md",
-                "aRef": ""
+                "file": "src/content/posts/111.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "diff",
-              "title": "Diff: 111"
+              "icon": "lucide-file",
+              "title": "111"
             }
           },
           {
@@ -123,6 +123,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "src/content/posts/111.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,7 +133,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "反向链接"
+              "title": "111 的反向链接列表"
             }
           },
           {
@@ -141,11 +142,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "src/content/posts/111.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "出链"
+              "title": "111 的出链列表"
             }
           },
           {
@@ -183,12 +185,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "src/content/posts/111.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "大纲"
+              "title": "111 的大纲"
             }
           },
           {
@@ -196,9 +199,11 @@
             "type": "leaf",
             "state": {
               "type": "file-properties",
-              "state": {},
+              "state": {
+                "file": "src/content/posts/111.md"
+              },
               "icon": "lucide-info",
-              "title": "笔记属性"
+              "title": "111的笔记属性"
             }
           },
           {
