@@ -32,7 +32,7 @@ Docker方式被我放弃后,我选择直接在1plane上部署静态网页,但是
 
 那么,在创立网站之后,/fuwari/index文件夹下,我们在进行clone后要把clone出来的项目从/index/fuwari中全部移出到/index目录下,然后进行建站.同时因为nodejs进行build之后生成的网站实际内容是在/dists目录下的,所以需要去面板的网页设置处把运行目录设置为/dists![](guide/如何在1panle上部署fuwari-1.png)
 在/index目录下打开终端,运行``npm install``和``npm build``后,等待一定时间让网站建立.最后访问你设置的地址,就能看见Fuwari的默认样式界面了![大概是这个样子](guide/如何在1panle上部署fuwari-2.png)
-<p align="center" style="font-size: 0.8em; color: gray;"><sub>大概是这个样子,颜色和文章标题应该会和我有所不同</sub></p>
+<p align="center" style="font-size: 1em; color: gray;"><sub>大概是这个样子,颜色和文章标题应该会和我有所不同</sub></p>
 
 ## 2.  从本地推送
 
@@ -67,7 +67,7 @@ Start-Service ssh-agent
 ssh-add $HOME\.ssh\id_ed25519
 git config --global core.sshCommand "C:/Windows/System32/OpenSSH/ssh.exe"
 ```
-<p align="center" style="font-size: 0.8em; color: gray;"><sub>这串命令会让windows 的ssh服务使用你指定的密钥,并让git使用windows的ssh服务</sub></p>
+<p align="center" style="font-size: 1em; color: gray;"><sub>这串命令会让windows 的ssh服务使用你指定的密钥,并让git使用windows的ssh服务</sub></p>
 有了钥匙和锁,我们也需要一双手去使用这个钥匙.我们固然可以在根目录里每次写完文章后运行命令来手动提交,但是我使用了Obsidian来进行文章的编写和github的上传.
 
 安装和配置Obsidian的教程可以参考Up主二叉树树的视频:  
