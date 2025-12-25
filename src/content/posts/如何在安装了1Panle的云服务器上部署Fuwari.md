@@ -32,7 +32,10 @@ Docker方式被我放弃后,我选择直接在1plane上部署静态网页,但是
 
 对,它不支持指定网站的目录,他必须先建立一个镜像网站之后再在他创建的目录里clone项目然后进行建站.
 
-那么,在创立网站之后,/fuwari/index文件夹下,我们在进行clone后要把clone出来的项目从/index/fuwari中全部移出到/index目录下,然后进行建站.同时因为nodejs进行build之后生成的网站实际内容是在/dists目录下的,所以需要去面板的网页设置处把运行目录设置为/dists![](guide/如何在1panle上部署fuwari-1.png)
+那么,在创立网站之后,/fuwari/index文件夹下,我们在进行clone后要把clone出来的项目从/index/fuwari中全部移出  
+移出到/index目录下,然后进行建站.  
+
+同时因为nodejs进行build之后生成的网站实际内容是在/dist目录下的,所以需要去面板的网页设置处把运行目录设置为/dist![](guide/如何在1panle上部署fuwari-1.png)
 在/index目录下打开终端,运行``npm install``和``npm build``后,等待一定时间让网站建立.最后访问你设置的地址,就能看见Fuwari的默认样式界面了![大概是这个样子](guide/如何在1panle上部署fuwari-2.png)
 <p align="center" style="font-size: 1em; color: gray;"><sub>大概是这个样子,颜色和文章标题应该会和我有所不同</sub></p>
 
@@ -49,7 +52,7 @@ Docker方式被我放弃后,我选择直接在1plane上部署静态网页,但是
 ```powershell
 ssh-keygen -t ed25519 -C "your_email@example.com"
 ```
-`-t`是协议 这个不用动 
+`-t`是协议 这个不用动  
 `-C`可以认为是一种注释,里面你想填什么填什么,只是为了你方便辨认,没有这个项也是可以的
 
 输入之后,如图:![](guide/如何在1panle上部署fuwari-3.png)
@@ -103,14 +106,14 @@ git config --global user.email "你的注册邮箱"
 先把这个项目里的`app.py`下载到服务器上.这个.py的功能是运行时检测github有没有通过webhook发送请求,当检测到请求的时候就执行一个脚本,这个脚本需要我们自己写.下载完成后,我们先按下不表.
 
 来到github上你的仓库界面,打开setting,点开webhook,新建webhook,界面如下:![](guide/如何在1panle上部署fuwari-6.png)
-URL填写:
-`你的服务器的公网IP:一个空闲端口` 
-比如:
-`1.2.3.4:6657`
-Type不用动;
-secret则是一种类似密码的东西,可以填写也可以不填写,填写了的话要记下,后面有用;
-SSL这里选择Disable;
-下面选择默认的Just the Push.
+URL填写:  
+`你的服务器的公网IP:一个空闲端口`   
+比如:  
+`1.2.3.4:6657`  
+Type不用动;  
+secret则是一种类似密码的东西,可以填写也可以不填写,填写了的话要记下,后面有用;  
+SSL这里选择Disable;  
+下面选择默认的Just the Push.  
 设置完成后点击`Add webhook`,管它github能不能检测到服务器呢直接跑路(其实是github的检测似乎有点问题,就算是通的他也显示无法连接,~~但是如果你的服务器真的通不了的话他也显示通不了就是了~~)
 
 OK,现在回到服务器,把`app.py`解压到一个文件夹下,再创立一个文件`build.sh`,里面输入:
@@ -140,7 +143,7 @@ yum install screen -y
 apt update && apt install screen -y
 ```
 
-现在我们创建了一个屏幕,在这里运行的程序就算我们断开了终端的连接,也依然会继续运行,这样我们就可以让`app.py`在后台一直运行.
+现在我们创建了一个屏幕,在这里运行的程序就算我们断开了终端的连接,也依然会继续运行,这样我们就可以让`app.py`在后台一直运行.  
 在这个screeen里运行:
 ```python
 #-key后面的字符串就是你前面在webhook设置的secret字符串
