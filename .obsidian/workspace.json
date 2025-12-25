@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "src/content/posts/111.md",
+                "file": "src/content/posts/如何在安装了1Panle的云服务器上部署Fuwari.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "111"
+              "title": "如何在安装了1Panle的云服务器上部署Fuwari"
             }
           },
           {
@@ -123,7 +123,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "src/content/posts/111.md",
+                "file": "src/content/posts/如何在安装了1Panle的云服务器上部署Fuwari.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -133,7 +133,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "111 的反向链接列表"
+              "title": "如何在安装了1Panle的云服务器上部署Fuwari 的反向链接列表"
             }
           },
           {
@@ -142,12 +142,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "src/content/posts/111.md",
+                "file": "src/content/posts/如何在安装了1Panle的云服务器上部署Fuwari.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "111 的出链列表"
+              "title": "如何在安装了1Panle的云服务器上部署Fuwari 的出链列表"
             }
           },
           {
@@ -185,13 +185,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "src/content/posts/111.md",
+                "file": "src/content/posts/如何在安装了1Panle的云服务器上部署Fuwari.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "111 的大纲"
+              "title": "如何在安装了1Panle的云服务器上部署Fuwari 的大纲"
             }
           },
           {
@@ -200,10 +200,10 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "src/content/posts/111.md"
+                "file": "src/content/posts/如何在安装了1Panle的云服务器上部署Fuwari.md"
               },
               "icon": "lucide-info",
-              "title": "111的笔记属性"
+              "title": "如何在安装了1Panle的云服务器上部署Fuwari的笔记属性"
             }
           },
           {
@@ -237,9 +237,9 @@
   },
   "active": "b449f015084726e8",
   "lastOpenFiles": [
-    "src/content/posts/未命名.md",
     "src/content/posts/111.md",
     "src/content/posts/如何在安装了1Panle的云服务器上部署Fuwari.md",
+    "src/content/posts/未命名.md",
     "node_modules/@expressive-code/plugin-text-markers/dist/index.js.map",
     "node_modules/@expressive-code/plugin-text-markers/dist/index.js",
     "node_modules/@expressive-code/plugin-text-markers/dist/index.d.ts",

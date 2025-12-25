@@ -117,7 +117,7 @@ SSL这里选择Disable;
 设置完成后点击`Add webhook`,管它github能不能检测到服务器呢直接跑路(其实是github的检测似乎有点问题,就算是通的他也显示无法连接,~~但是如果你的服务器真的通不了的话他也显示通不了就是了~~)
 
 OK,现在回到服务器,把`app.py`解压到一个文件夹下,再创立一个文件`build.sh`,里面输入:
-``` Bash
+``` bash
 #打开你的网站里index的目录
 cd /opt/1panel/apps/openresty/openresty/www/sites/fuwari/index
 #从github仓库里获取内容更新

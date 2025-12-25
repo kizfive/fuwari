@@ -30,9 +30,6 @@ export default defineConfig({
 	site: "https://fuwari.vercel.app/",
 	base: "/",
 	trailingSlash: "always",
-	markdown: {
-  			remarkPlugins: [remarkBreaks],
-			},
 	integrations: [
 		tailwind({
 			nesting: true,
@@ -109,6 +106,7 @@ export default defineConfig({
 	markdown: {
 		remarkPlugins: [
 			remarkMath,
+			remarkBreaks,
 			remarkReadingTime,
 			remarkExcerpt,
 			remarkGithubAdmonitionsToDirectives,
