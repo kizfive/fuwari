@@ -238,6 +238,7 @@
   "active": "b449f015084726e8",
   "lastOpenFiles": [
     "src/content/posts/如何在安装了1Panle的云服务器上部署Fuwari.md",
+    "src/content/posts/draft.md",
     "src/content/posts/111.md",
     "dist/pagefind/index/zh-cn_2f15cec.pf_index",
     "dist/pagefind/fragment/zh-cn_fde7b6b.pf_fragment",
@@ -281,7 +282,6 @@
     "node_modules/unifont/node_modules/mdn-data/README.md",
     "node_modules/unifont/node_modules/css-tree/README.md",
     "node_modules/unifont/README.md",
-    "node_modules/tailwindcss/src/postcss-plugins/nesting/README.md",
-    "node_modules/tailwindcss/src/value-parser/README.md"
+    "node_modules/tailwindcss/src/postcss-plugins/nesting/README.md"
   ]
 }
