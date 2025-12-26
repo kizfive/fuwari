@@ -25,6 +25,6 @@ published: 2023-10-19
 
 ## Bilibili
 
-<iframe iframe width="100%" height="468" src="//player.bilibili.com/player.html?isOutside=true&aid=999351970&bvid=BV1s44y1w7jk&cid=1222659147&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+<iframe iframe width="100%" height="468" src="https://player.bilibili.com/player.html?isOutside=true&aid=999351970&bvid=BV1s44y1w7jk&cid=1222659147&p=1&autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
 
 <iframe width="100%" height="468" src="https://player.bilibili.com/player.html?bvid=BV1fK4y1s7Qf&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
