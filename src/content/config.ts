@@ -12,6 +12,10 @@ const postsCollection = defineCollection({
 		category: z.string().optional().nullable().default(""),
 		lang: z.string().optional().default(""),
 
+		/*切换不同语言的帖子*/
+		en: z.string().optional(),
+		cn: z.string().optional(),
+
 		/* For internal use */
 		prevTitle: z.string().default(""),
 		prevSlug: z.string().default(""),

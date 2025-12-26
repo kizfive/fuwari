@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "src/content/posts/markdown-extended/markdown-extended.md",
+                "file": "src/content/posts/markdown-extended/markdown-extended-cn.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "markdown-extended"
+              "title": "markdown-extended-cn"
             }
           },
           {
@@ -258,8 +258,8 @@
   },
   "active": "b449f015084726e8",
   "lastOpenFiles": [
-    "src/content/posts/markdown-extended/markdown-extended-cn.md",
     "src/content/posts/markdown-extended/markdown-extended.md",
+    "src/content/posts/markdown-extended/markdown-extended-cn.md",
     "src/content/posts/Deploy-Fuwari-on-cloudserver-with-1Panel.md",
     "src/content/posts/markdown-extended",
     "src/content/posts/新建文件夹",
