@@ -12,6 +12,7 @@ tags:
 category: Examples
 draft: false
 nextPosturl:
+cn: markdown-extended/markdown-extended-cn/
 ---
 
 ## GitHub Repository Cards
