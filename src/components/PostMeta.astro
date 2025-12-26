@@ -80,3 +80,26 @@ const className = Astro.props.class;
         </div>
     </div>
 </div>
+<!-- Language switch buttons on separate line -->
+{(en || cn) && (
+    <div class="flex flex-wrap gap-2 mt-2">
+        <div class="flex flex-row flex-wrap items-center gap-2 mb-2">
+            {en && (
+                <a href={`/blog/posts/${en}`} 
+                   class="link-lg transition text-50 text-lg font-medium
+                          hover:text-[var(--primary)] dark:hover:text-[var(--primary)] whitespace-nowrap
+                          px-2 py-1 rounded-md bg-black/5 dark:bg-white/10">
+                    English Version
+                </a>
+            )}
+            {cn && (
+                <a href={`/blog/posts/${cn}`}
+                   class="link-lg transition text-50 text-lg font-medium
+                          hover:text-[var(--primary)] dark:hover:text-[var(--primary)] whitespace-nowrap
+                          px-2 py-1 rounded-md bg-black/5 dark:bg-white/10">
+                    中文版本
+                </a>
+            )}
+        </div>
+    </div>
+)}
