@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "src/content/posts/video.md",
+                "file": "src/content/posts/Deploy-Fuwari-on-cloudserver-with-1Panel.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "video"
+              "title": "Deploy-Fuwari-on-cloudserver-with-1Panel"
             }
           },
           {
@@ -238,8 +238,9 @@
   },
   "active": "b449f015084726e8",
   "lastOpenFiles": [
+    "src/content/posts/video.md",
     "src/content/posts/111.md",
-    "src/content/posts/如何在安装了1Panel的云服务器上部署Fuwari.md",
+    "src/content/posts/Deploy-Fuwari-on-cloudserver-with-1Panel.md",
     "src/content/posts/未命名.md",
     "node_modules/@expressive-code/plugin-text-markers/dist/index.js.map",
     "node_modules/@expressive-code/plugin-text-markers/dist/index.js",
@@ -257,7 +258,6 @@
     "node_modules/@shikijs/types/README.md",
     "node_modules/@shikijs/core/README.md",
     "node_modules/@types/parse-json/README.md",
-    "src/content/posts/video.md",
     "src/content/posts/markdown-extended.md",
     "src/content/posts/markdown.md",
     "src/content/posts/expressive-code.md",
