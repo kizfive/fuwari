@@ -1,14 +1,18 @@
 ---
-title: Markdown 拓展功能
+title: Markdown 拓展功能111
 published: 2024-05-01T00:00:00.000Z
 updated: 2025-12-18
 description: 在Fuwari中阅读有关Markdown功能的更多信息
-image: ''
-tags: [Markdown, 博客, 示例, 演示]
+image: ""
+tags:
+  - Markdown
+  - 博客
+  - 示例
+  - 演示
 category: 示例
 draft: false
 lang: zh_CN
-en: "markdown-extended/en/"
+en: markdown-extended/en/
 ---
 
 :::note
