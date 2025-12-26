@@ -12,7 +12,7 @@ tags:
 category: 示例
 draft: false
 lang: zh_CN
-en: markdown-extended/en/
+en: markdown-extended/markdown-extended/
 ---
 
 :::note
