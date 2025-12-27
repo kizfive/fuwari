@@ -25,14 +25,14 @@
             "id": "b449f015084726e8",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "split-diff-view",
               "state": {
-                "file": "src/content/posts/111.md",
-                "mode": "source",
-                "source": false
+                "aFile": ".gitignore",
+                "bFile": ".gitignore",
+                "aRef": ""
               },
-              "icon": "lucide-file",
-              "title": "111"
+              "icon": "diff",
+              "title": "Diff: .gitignore"
             }
           },
           {
@@ -258,6 +258,9 @@
   },
   "active": "b449f015084726e8",
   "lastOpenFiles": [
+    "CONTRIBUTING.md",
+    "未命名.base",
+    "src/content/posts/111.md",
     "src/content/posts/markdown-extended/markdown-extended-cn.md",
     "src/content/posts/markdown-extended/markdown-extended.md",
     "src/content/posts/Deploy-Fuwari-on-cloudserver-with-1Panel.md",
@@ -266,7 +269,6 @@
     "src/content/posts/markdown-extended-cn.md",
     "src/content/posts/cn.md.crdownload",
     "src/content/posts/video.md",
-    "src/content/posts/111.md",
     "src/content/posts/未命名.md",
     "node_modules/@expressive-code/plugin-text-markers/dist/index.js.map",
     "node_modules/@expressive-code/plugin-text-markers/dist/index.js",
@@ -274,7 +276,6 @@
     "node_modules/@expressive-code/plugin-text-markers/dist",
     "node_modules/@expressive-code/plugin-shiki/dist/index.js.map",
     "node_modules/@expressive-code/plugin-shiki/dist/index.js",
-    "node_modules/@expressive-code/plugin-shiki/dist/index.d.ts",
     "node_modules/expressive-code/README.md",
     "node_modules/@shikijs/vscode-textmate/README.md",
     "node_modules/@shikijs/vscode-textmate/LICENSE.md",
@@ -301,8 +302,6 @@
     "node_modules/which/CHANGELOG.md",
     "node_modules/regjsparser/README.md",
     "node_modules/jsesc/README.md",
-    "node_modules/hast-util-select/readme.md",
-    "node_modules/hast-util-to-text/readme.md",
-    "node_modules/dom-serializer/README.md"
+    "node_modules/hast-util-select/readme.md"
   ]
 }
