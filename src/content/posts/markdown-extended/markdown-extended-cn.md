@@ -37,7 +37,7 @@ This is a translated version.
 
 ::github{user="torvalds"}
 
-使用代码 `::github{user="username"}` 创建 GitHub 用户卡片。
+使用代码 `::github{user="username"}` 创建 GitHub 用户卡片。 
 
 ```markdown
 ::github{user="torvalds"}
