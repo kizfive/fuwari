@@ -10,6 +10,7 @@ import { h } from "hastscript";
  * @returns {import('mdast').Parent} The created GitHub Card component.
  */
 export function GithubCardComponent(properties, children) {
+	console.log("[GithubCard] Processing:", JSON.stringify(properties));
 	if (Array.isArray(children) && children.length !== 0)
 		return h("div", { class: "hidden" }, [
 			'Invalid directive. ("github" directive must be leaf type "::github{repo="owner/repo"}" or "::github{user="username"}")',
