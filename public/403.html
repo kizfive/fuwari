@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-CN" class="bg-[var(--page-bg)] transition text-[14px] md:text-[16px]" style="--bannerOffset: 15vh;--banner-height-home: 65vh;--banner-height: 35vh;--configHue: 250;--page-width: 75rem;">
+<html lang="zh-CN" class="bg-[var(--page-bg)] transition text-[14px] md:text-[16px]">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +7,11 @@
     <style>
         /* CSS Variables extracted from your site */
         :root {
+            --bannerOffset: 15vh;
+            --banner-height-home: 65vh;
+            --banner-height: 35vh;
+            --configHue: 250;
+            --page-width: 75rem;
             --hue: 250;
             --primary: oklch(0.70 0.14 var(--hue));
             --page-bg: oklch(0.95 0.01 var(--hue));
@@ -149,6 +154,7 @@
             font-weight: bold;
             color: var(--primary);
             opacity: 0.2;
+            -webkit-user-select: none;
             user-select: none;
             line-height: 1;
         }
@@ -210,54 +216,90 @@
             animation: 300ms fade-in-up forwards;
         }
 
+        .animation-delay-100 {
+            animation-delay: 100ms;
+        }
+
         /* Utility */
         .hidden { display: none; }
         @media (min-width: 768px) { .md\:flex { display: flex; } }
+
+        .logo-text {
+            color: var(--primary);
+            font-size: 1rem;
+        }
+        
+        .github-icon {
+            margin-left: 0.25rem; 
+            font-size: 0.875rem; 
+            opacity: 0.5;
+        }
+
+        .invisible-placeholder {
+            opacity: 0; 
+            pointer-events: none; 
+            -webkit-user-select: none;
+            user-select: none;
+        }
+
+        .sub-error-message {
+            font-size: 1.1rem; 
+            margin-top: 0.5rem; 
+            opacity: 0.7; 
+            font-weight: normal;
+        }
+
+        .mobile-menu-container {
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        .logo-placeholder-inner {
+            display: flex;
+            align-items: center;
+            font-size: 1rem;
+        }
     </style>
 </head>
 <body>
 
     <!-- Navbar (Imitating Fuwari Structure) -->
     <div id="top-row">
-        <div id="navbar-wrapper">
+        <nav id="navbar-wrapper">
             <div id="navbar" class="onload-animation">
                 <div class="card-base navbar-container">
                     <!-- Logo / Home Link -->
-                    <a href="javascript:void(0)" class="btn-plain rounded-lg h-11 px-5 font-bold">
-                        <div style="display: flex; align-items: center; color: var(--primary); font-size: 1rem;">
-                            <svg class="icon-lg mr-2 mb-1" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M6 19h3v-5q0-.425.288-.712T10 13h4q.425 0 .713.288T15 14v5h3v-9l-6-4.5L6 10zm-2 0v-9q0-.475.213-.9t.587-.7l6-4.5q.525-.4 1.2-.4t1.2.4l6 4.5q.375.275.588.7T20 10v9q0 .825-.588 1.413T18 21h-4q-.425 0-.712-.288T13 20v-5h-2v5q0 .425-.288.713T10 21H6q-.825 0-1.412-.587T4 19m8-6.75"/>
-                            </svg>
-                            Notess's Blog
-                        </div>
+                    <a href="javascript:void(0)" class="btn-plain rounded-lg h-11 px-5 font-bold logo-text">
+                        <svg class="icon-lg mr-2 mb-1" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M6 19h3v-5q0-.425.288-.712T10 13h4q.425 0 .713.288T15 14v5h3v-9l-6-4.5L6 10zm-2 0v-9q0-.475.213-.9t.587-.7l6-4.5q.525-.4 1.2-.4t1.2.4l6 4.5q.375.275.588.7T20 10v9q0 .825-.588 1.413T18 21h-4q-.425 0-.712-.288T13 20v-5h-2v5q0 .425-.288.713T10 21H6q-.825 0-1.412-.587T4 19m8-6.75"/>
+                        </svg>
+                        Notess's Blog
                     </a>
 
                     <!-- Desktop Menu -->
                     <div class="hidden md:flex">
                         <a href="javascript:void(0)" class="btn-plain rounded-lg h-11 font-bold px-5">
-                            <div style="display: flex; align-items: center;">主页</div>
+                            主页
                         </a>
                         <a href="javascript:void(0)" class="btn-plain rounded-lg h-11 font-bold px-5">
-                            <div style="display: flex; align-items: center;">归档</div>
+                            归档
                         </a>
                         <a href="javascript:void(0)" class="btn-plain rounded-lg h-11 font-bold px-5">
-                            <div style="display: flex; align-items: center;">关于</div>
+                            关于
                         </a>
                         <a href="javascript:void(0)" class="btn-plain rounded-lg h-11 font-bold px-5">
-                            <div style="display: flex; align-items: center;">
-                                GitHub
-                                <svg class="icon" style="margin-left: 0.25rem; font-size: 0.875rem; opacity: 0.5;" viewBox="0 0 512 512" fill="currentColor">
-                                    <path d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32zM80 32C35.8 32 0 67.8 0 112v320c0 44.2 35.8 80 80 80h320c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32v112c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16h112c17.7 0 32-14.3 32-32s-14.3-32-32-32z"/>
-                                </svg>
-                            </div>
+                            GitHub
+                            <svg class="icon github-icon" viewBox="0 0 512 512" fill="currentColor">
+                                <path d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32zM80 32C35.8 32 0 67.8 0 112v320c0 44.2 35.8 80 80 80h320c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32v112c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16h112c17.7 0 32-14.3 32-32s-14.3-32-32-32z"/>
+                            </svg>
                         </a>
                     </div>
 
                     <!-- Mobile Menu Button (Visual Only) -->
-                    <div style="display: flex; gap: 0.5rem;">
+                    <div class="mobile-menu-container">
                          <!-- Invisible copy of the Logo to balance the layout and center the menu -->
-                         <div class="btn-plain rounded-lg h-11 px-5 font-bold" style="opacity: 0; pointer-events: none; user-select: none;">
-                            <div style="display: flex; align-items: center; font-size: 1rem;">
+                         <div class="btn-plain rounded-lg h-11 px-5 font-bold invisible-placeholder">
+                            <div class="logo-placeholder-inner">
                                 <svg class="icon-lg mr-2 mb-1" viewBox="0 0 24 24" fill="currentColor">
                                     <path d="M6 19h3v-5q0-.425.288-.712T10 13h4q.425 0 .713.288T15 14v5h3v-9l-6-4.5L6 10zm-2 0v-9q0-.475.213-.9t.587-.7l6-4.5q.525-.4 1.2-.4t1.2.4l6 4.5q.375.275.588.7T20 10v9q0 .825-.588 1.413T18 21h-4q-.425 0-.712-.288T13 20v-5h-2v5q0 .425-.288.713T10 21H6q-.825 0-1.412-.587T4 19m8-6.75"/>
                                 </svg>
@@ -267,15 +309,15 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </nav>
     </div>
 
     <!-- Main Content -->
-    <div class="main-content onload-animation" style="animation-delay: 100ms;">
+    <main class="main-content onload-animation animation-delay-100">
         <div class="error-code">403</div>
         <div class="error-message-container">
             <p class="error-message">网页可能正在重构中或出现了一些问题...</p>
-            <p class="error-message" style="font-size: 1.1rem; margin-top: 0.5rem; opacity: 0.7; font-weight: normal;">也许你可以等待一会然后刷新网页试试?</p>
+            <p class="error-message sub-error-message">也许你可以等待一会然后刷新网页试试?</p>
         </div>
         
         <a href="javascript:location.reload()" class="home-btn">
@@ -286,7 +328,7 @@
             </svg>
             刷新网站
         </a>
-    </div>
+    </main>
 
 </body>
 </html>
