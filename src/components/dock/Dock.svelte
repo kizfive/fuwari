@@ -1,78 +1,78 @@
 <script lang="ts">
-  import Icon from "@iconify/svelte";
-  import { url } from "@utils/url-utils.ts";
-  import { onMount } from "svelte";
-  import DockSearch from "./DockSearch.svelte";
+import Icon from "@iconify/svelte";
+import { url } from "@utils/url-utils.ts";
+import { onMount } from "svelte";
+import DockSearch from "./DockSearch.svelte";
 
-  let props = $props();
+let props = $props();
 
 // Configurable options - can be customized based on site needs
 const config = {
-  scrollThreshold: 150, // Show dock after scrolling this many pixels
-  homePath: "/",
-  archivePath: "/archive/",
-  aboutPath: "/about/",
+	scrollThreshold: 150, // Show dock after scrolling this many pixels
+	homePath: "/",
+	archivePath: "/archive/",
+	aboutPath: "/about/",
 };
 
 let showDock = $state(false);
 let scrollTimer: ReturnType<typeof setTimeout> | null = null;
 
 onMount(() => {
-  handleScroll();
+	handleScroll();
 
-  window.addEventListener("scroll", handleScroll, { passive: true });
+	window.addEventListener("scroll", handleScroll, { passive: true });
 
-  return () => {
-    window.removeEventListener("scroll", handleScroll);
-    if (scrollTimer) {
-      clearTimeout(scrollTimer);
-    }
-  };
+	return () => {
+		window.removeEventListener("scroll", handleScroll);
+		if (scrollTimer) {
+			clearTimeout(scrollTimer);
+		}
+	};
 });
 
 function handleScroll() {
-  if (scrollTimer) {
-    clearTimeout(scrollTimer);
-  }
+	if (scrollTimer) {
+		clearTimeout(scrollTimer);
+	}
 
-  scrollTimer = setTimeout(() => {
-    const currentScrollY = window.scrollY;
-    // Dock displayed when the currentScrollY > scrollThreshold
-    showDock = currentScrollY > config.scrollThreshold;
-    scrollTimer = null;
-  }, 16);
+	scrollTimer = setTimeout(() => {
+		const currentScrollY = window.scrollY;
+		// Dock displayed when the currentScrollY > scrollThreshold
+		showDock = currentScrollY > config.scrollThreshold;
+		scrollTimer = null;
+	}, 16);
 }
 
 function navigateHome(event: Event) {
-  event.preventDefault();
-  if (window.swup) {
-    window.swup.navigate(url(config.homePath));
-  }
+	event.preventDefault();
+	if (window.swup) {
+		window.swup.navigate(url(config.homePath));
+	}
 }
 
 // Return to Top
 function scrollToTop(e: Event) {
-  e.stopPropagation();
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth",
-  });
+	e.stopPropagation();
+	window.scrollTo({
+		top: 0,
+		behavior: "smooth",
+	});
 }
 
 // Navigate to Archive
 function navigateToArchive(event: Event) {
-  event.preventDefault();
-  if (window.swup) {
-    window.swup.navigate(url(config.archivePath));
-  }
+	event.preventDefault();
+	if (window.swup) {
+		window.swup.navigate(url(config.archivePath));
+	}
 }
 
 // Navigate to About
 function navigateToAbout(event: Event) {
-  event.preventDefault();
-  if (window.swup) {
-    window.swup.navigate(url(config.aboutPath));
-  }
+	event.preventDefault();
+	if (window.swup) {
+		window.swup.navigate(url(config.aboutPath));
+	}
 }
 </script>
 

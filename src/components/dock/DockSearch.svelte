@@ -17,121 +17,121 @@ let searchInputElement: HTMLInputElement;
 
 // Mock data for development environment - customize as needed
 const fakeResult: SearchResult[] = [
-{
-        url: url("/posts/nggyu/"),
-        meta: {
-                title: "Never Gonna Give You Up",
-        },
-        excerpt:
-                "Because the search cannot work in the <mark>dev</mark> environment.",
-},
-{
-        url: url("/"),
-        meta: {
-                title: "If You Want to Test the Search",
-        },
-        excerpt: "Try running <mark>npm build && npm preview</mark> instead.",
-},
+	{
+		url: url("/posts/nggyu/"),
+		meta: {
+			title: "Never Gonna Give You Up",
+		},
+		excerpt:
+			"Because the search cannot work in the <mark>dev</mark> environment.",
+	},
+	{
+		url: url("/"),
+		meta: {
+			title: "If You Want to Test the Search",
+		},
+		excerpt: "Try running <mark>npm build && npm preview</mark> instead.",
+	},
 ];
 
 function toggleVisibility(): void {
-isVisible = !isVisible;
-if (isVisible) {
-        setTimeout(() => {
-                if (searchInputElement) searchInputElement.focus();
-        }, 10);
-} else {
-        resetSearch();
-}
+	isVisible = !isVisible;
+	if (isVisible) {
+		setTimeout(() => {
+			if (searchInputElement) searchInputElement.focus();
+		}, 10);
+	} else {
+		resetSearch();
+	}
 }
 
 function hide(): void {
-isVisible = false;
-resetSearch();
+	isVisible = false;
+	resetSearch();
 }
 
 function resetSearch(): void {
-result = [];
-keyword = "";
+	result = [];
+	keyword = "";
 }
 
 function navigateToResult(event: Event, itemUrl: string): void {
-event.preventDefault();
-hide(); // Hide search panel
-if (window.swup) {
-        window.swup.navigate(itemUrl);
-} else {
-        window.location.href = itemUrl;
-}
+	event.preventDefault();
+	hide(); // Hide search panel
+	if (window.swup) {
+		window.swup.navigate(itemUrl);
+	} else {
+		window.location.href = itemUrl;
+	}
 }
 
 function handleClickOutside(event: Event): void {
-const target = event.target as HTMLElement;
-if (
-        !searchPanelElement?.contains(target) &&
-        !target?.closest("#dock-search-button")
-) {
-        hide();
-}
+	const target = event.target as HTMLElement;
+	if (
+		!searchPanelElement?.contains(target) &&
+		!target?.closest("#dock-search-button")
+	) {
+		hide();
+	}
 }
 
 async function search(): Promise<void> {
-if (!keyword) {
-        result = [];
-        return;
-}
+	if (!keyword) {
+		result = [];
+		return;
+	}
 
-if (!initialized) return;
+	if (!initialized) return;
 
-isSearching = true;
+	isSearching = true;
 
-try {
-        if (import.meta.env.PROD && pagefindLoaded && window.pagefind) {
-                const response = await window.pagefind.search(keyword);
-                result = await Promise.all(response.results.map((item) => item.data()));
-        } else if (import.meta.env.DEV) {
-                result = fakeResult;
-        } else {
-                result = [];
-                console.error("Pagefind is not available in production environment.");
-        }
-} catch (error) {
-        console.error("Search error:", error);
-        result = [];
-} finally {
-        isSearching = false;
-}
+	try {
+		if (import.meta.env.PROD && pagefindLoaded && window.pagefind) {
+			const response = await window.pagefind.search(keyword);
+			result = await Promise.all(response.results.map((item) => item.data()));
+		} else if (import.meta.env.DEV) {
+			result = fakeResult;
+		} else {
+			result = [];
+			console.error("Pagefind is not available in production environment.");
+		}
+	} catch (error) {
+		console.error("Search error:", error);
+		result = [];
+	} finally {
+		isSearching = false;
+	}
 }
 
 $: hasResults = result.length > 0;
 
 $: panelWidth = (() => {
-// When not searching
-if (!keyword?.trim()) return "30rem";
+	// When not searching
+	if (!keyword?.trim()) return "30rem";
 
-// When search results are available
-if (hasResults) {
-        // Calculate the estimated width of the longest heading
-        const maxLength = Math.max(
-                ...result.map(
-                        (item) =>
-                                (item?.meta?.title?.length || 0) * 1.2 +
-                                (item?.excerpt?.length || 0) * 0.3,
-                ),
-        );
+	// When search results are available
+	if (hasResults) {
+		// Calculate the estimated width of the longest heading
+		const maxLength = Math.max(
+			...result.map(
+				(item) =>
+					(item?.meta?.title?.length || 0) * 1.2 +
+					(item?.excerpt?.length || 0) * 0.3,
+			),
+		);
 
-        // Calculate the width based on the content length
-        const minWidth = 35; // rem
-        const maxWidth = 55; // rem
-        const calculatedWidth = Math.min(
-                Math.max(minWidth, maxLength / 10),
-                maxWidth,
-        );
-        return `${calculatedWidth}rem`;
-}
+		// Calculate the width based on the content length
+		const minWidth = 35; // rem
+		const maxWidth = 55; // rem
+		const calculatedWidth = Math.min(
+			Math.max(minWidth, maxLength / 10),
+			maxWidth,
+		);
+		return `${calculatedWidth}rem`;
+	}
 
-// When searching or no results found
-return "35rem";
+	// When searching or no results found
+	return "35rem";
 })();
 
 // Optimize performance using throttling
@@ -140,75 +140,75 @@ let updateTimeout: ReturnType<typeof setTimeout>;
 let searchTimeout: ReturnType<typeof setTimeout>;
 
 function updatePanelWidth(width: string) {
-if (width !== lastPanelWidth) {
-        if (updateTimeout) clearTimeout(updateTimeout);
-        updateTimeout = setTimeout(() => {
-                if (typeof document !== "undefined") {
-                        document.documentElement.style.setProperty(
-                                "--search-panel-width",
-                                width,
-                        );
-                        lastPanelWidth = width;
-                }
-        }, 50); // 50ms throttling
-}
+	if (width !== lastPanelWidth) {
+		if (updateTimeout) clearTimeout(updateTimeout);
+		updateTimeout = setTimeout(() => {
+			if (typeof document !== "undefined") {
+				document.documentElement.style.setProperty(
+					"--search-panel-width",
+					width,
+				);
+				lastPanelWidth = width;
+			}
+		}, 50); // 50ms throttling
+	}
 }
 
 $: updatePanelWidth(panelWidth);
 
 // Lifecycle Management
 onMount(() => {
-document.addEventListener("click", handleClickOutside);
+	document.addEventListener("click", handleClickOutside);
 
-const initializeSearch = (): void => {
-        initialized = true;
-        pagefindLoaded =
-                typeof window !== "undefined" &&
-                !!window.pagefind &&
-                typeof window.pagefind.search === "function";
-        console.log("Pagefind status on init:", pagefindLoaded);
-        if (keyword) search();
-};
+	const initializeSearch = (): void => {
+		initialized = true;
+		pagefindLoaded =
+			typeof window !== "undefined" &&
+			!!window.pagefind &&
+			typeof window.pagefind.search === "function";
+		console.log("Pagefind status on init:", pagefindLoaded);
+		if (keyword) search();
+	};
 
-if (import.meta.env.DEV) {
-        console.log(
-                "Pagefind is not available in development mode. Using mock data.",
-        );
-        initializeSearch();
-} else {
-        document.addEventListener("pagefindready", () => {
-                console.log("Pagefind ready event received.");
-                initializeSearch();
-        });
-        document.addEventListener("pagefindloaderror", () => {
-                console.warn(
-                        "Pagefind load error event received. Search functionality will be limited.",
-                );
-                initializeSearch();
-        });
+	if (import.meta.env.DEV) {
+		console.log(
+			"Pagefind is not available in development mode. Using mock data.",
+		);
+		initializeSearch();
+	} else {
+		document.addEventListener("pagefindready", () => {
+			console.log("Pagefind ready event received.");
+			initializeSearch();
+		});
+		document.addEventListener("pagefindloaderror", () => {
+			console.warn(
+				"Pagefind load error event received. Search functionality will be limited.",
+			);
+			initializeSearch();
+		});
 
-        // Fallback in case events are not caught or pagefind is already loaded
-        setTimeout(() => {
-                if (!initialized) {
-                        console.log("Fallback: Initializing search after timeout.");
-                        initializeSearch();
-                }
-        }, 2000);
-}
+		// Fallback in case events are not caught or pagefind is already loaded
+		setTimeout(() => {
+			if (!initialized) {
+				console.log("Fallback: Initializing search after timeout.");
+				initializeSearch();
+			}
+		}, 2000);
+	}
 
-return () => {
-        document.removeEventListener("click", handleClickOutside);
-        if (updateTimeout) clearTimeout(updateTimeout);
-        if (searchTimeout) clearTimeout(searchTimeout);
-};
+	return () => {
+		document.removeEventListener("click", handleClickOutside);
+		if (updateTimeout) clearTimeout(updateTimeout);
+		if (searchTimeout) clearTimeout(searchTimeout);
+	};
 });
 
 // Responsive Search with throttling
 $: if (initialized && keyword) {
-if (searchTimeout) clearTimeout(searchTimeout);
-searchTimeout = setTimeout(async () => {
-        await search();
-}, 300); // 300ms throttling
+	if (searchTimeout) clearTimeout(searchTimeout);
+	searchTimeout = setTimeout(async () => {
+		await search();
+	}, 300); // 300ms throttling
 }
 </script>
 
