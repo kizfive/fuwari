@@ -69,21 +69,22 @@ export const profileConfig: ProfileConfig = {
 			icon: "fa6-brands:steam",
 			url: "https://steamcommunity.com/id/kizfive/",
 		},
-		/*{
+		{
 			name: "Openlist",
 			icon: "ic:sharp-cloud-circle",
-			url: "http://8.138.20.164:5244/",
+			url: "http://opl.notess.top/",
 		},
+		/*
 		{
 			name: "贪吃蛇",
 			icon: "fluent-emoji-high-contrast:beaming-face-with-smiling-eyes",
 			url: "http://8.138.20.164:114/",
 		},*/
-		// {
-		// 	name: "GitHub",
-		// 	icon: "fa6-brands:github",
-		// 	url: "https://github.com/saicaca/fuwari",
-		// },
+		{
+			name: "GitHub",
+			icon: "fa6-brands:github",
+			url: "https://github.com/kizfive",
+		},
 	],
 };
 
