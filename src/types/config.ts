@@ -69,6 +69,8 @@ export type ProfileConfig = {
 		url: string;
 		icon: string;
 	}[];
+	// whether clicking avatar links to About page
+	showLink?: boolean;
 };
 
 export type LicenseConfig = {

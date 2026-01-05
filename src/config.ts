@@ -46,8 +46,13 @@ export const navBarConfig: NavBarConfig = {
 		LinkPreset.About,
 		{
 			name: "GitHub",
-			url: "https://github.com/saicaca/fuwari", // Internal links should not include the base path, as it is automatically added
+			url: "https://github.com/kizfive/fuwari", // Internal links should not include the base path, as it is automatically added
 			external: true, // Show an external link icon and will open in a new tab
+		},
+		{
+			name: "监控",
+			url: "https://uk.notess.top/status/default",
+			external: true,
 		},
 	],
 };
@@ -56,6 +61,7 @@ export const profileConfig: ProfileConfig = {
 	avatar: "assets/images/avatar.png", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
 	name: "Notess",
 	bio: "What can i say?",
+	showLink: false,
 	links: [
 		// {
 		// 	name: "Twitter",
